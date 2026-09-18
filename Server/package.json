@@ -1,0 +1,42 @@
+{
+  "name": "blogapp",
+  "version": "1.0.0",
+  "description": "TugasATS_XIrpl5",
+  "license": "ISC",
+  "author": "qnage",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "seed:admin": "tsx src/scripts/seedAdmin.ts",
+    "db:push": "drizzle-kit push --config=src/drizzle.config.ts",
+    "db:studio": "drizzle-kit studio --config=src/drizzle.config.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.5.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
+    "drizzle-kit": "^0.31.10",
+    "drizzle-orm": "^0.45.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.24.3",
+    "streamifier": "^0.1.1",
+    "tsx": "^4.23.13"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/multer": "^1.4.12",
+    "@types/node": "^26.5.0",
+    "@types/streamifier": "^0.1.2",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}
